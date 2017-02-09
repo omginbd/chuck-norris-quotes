@@ -1,0 +1,23 @@
+body {
+	background-image: url('https://s-media-cache-ak0.pinimg.com/originals/4d/31/5d/4d315d36c60bf63431dcc8c10ebf0b0e.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#quote-wrapper {
+	background-color: rgba(128, 128, 128, 0.8);
+	font-size: 67px;
+	min-width: 50%;
+	min-height: 20%;
+	padding: 12px;
+	color: white;
+	margin: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
