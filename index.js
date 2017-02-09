@@ -6,7 +6,6 @@ $(() => {
   const front = $('.front')
   const back = $('.back')
   let  toggle = true
-njnjin
 	const body = document.getElementsByTagName('body')[0]
 
   button.click(() => {
@@ -18,11 +17,11 @@ njnjin
 				if (toggle)
 				{ front.text(joke)
 				toggle = !toggle
-$('.flip-container')[0].classList = ["flip-container"]}
+$('.flip-container')[0].className = "flip-container"}
 				else {
-				back.text = joke
+				back.text(joke)
 				toggle = !toggle
-$('.flip-container')[0].classList = ["flip-container", "flip-container-hover"]}
+$('.flip-container')[0].className += ' flip-container-hover'}
 
 					
     })
