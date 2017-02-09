@@ -3,6 +3,10 @@ $(() => {
 	audioElement.setAttribute('src', 'http://soundbible.com/grab.php?id=996&type=mp3')
   const quoteHolder = $('#quote')
   const button = $('#getQuoteButton')
+  const front = $('.front')
+  const back = $('.back')
+  let  toggle = true
+njnjin
 	const body = document.getElementsByTagName('body')[0]
 
   button.click(() => {
@@ -11,7 +15,16 @@ $(() => {
       ({value: {joke}}) => {
 				body.style.backgroundImage = getRandomImage()
 				audioElement.play()
-				quoteHolder.text(`${joke}`)
+				if (toggle)
+				{ front.text(joke)
+				toggle = !toggle
+$('.flip-container')[0].classList = ["flip-container"]}
+				else {
+				back.text = joke
+				toggle = !toggle
+$('.flip-container')[0].classList = ["flip-container", "flip-container-hover"]}
+
+					
     })
   })
 })
